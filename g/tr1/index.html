@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TR1 - The Game</title>
+    <style>
+        body {
+            background-color: #d0d0d0;
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+            color: #000000;
+            line-height: 1.4;
+        }
+
+        h1, h2, h3 {
+            font-family: "Times New Roman", Times, serif;
+            color: #006600;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            border-bottom: 3px double #006600;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-left: 5px solid #006600;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            border-bottom: 1px dotted #006600;
+            padding-bottom: 3px;
+        }
+
+        a:link {
+            color: #000066;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #660066;
+        }
+
+        a:hover {
+            color: #cc0000;
+            text-decoration: underline;
+        }
+
+        .content {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border: 2px solid #006600;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 2px solid #006600;
+        }
+
+        th {
+            background-color: #006600;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #006600;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f8f0;
+        }
+
+        .download-btn {
+            background-color: #80ff80;
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background-color: #009900;
+            color: white;
+            text-decoration: none;
+        }
+
+        .notice {
+            background-color: #f0f8ff;
+            border: 2px dashed #006600;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .highlight {
+            background-color: #e0ffe0;
+            padding: 2px 4px;
+        }
+
+        .screenshot {
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid #006600;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+        .screenshot img {
+            border: 1px solid #000000;
+            max-width: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            border-top: 1px solid #006600;
+            padding-top: 15px;
+            margin-top: 30px;
+        }
+
+        .requirements {
+            border: 1px solid #006600;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+        }
+
+        .requirements h3 {
+            margin-top: 0;
+        }
+
+        .requirements table {
+            border: 1px solid #006600;
+            margin: 10px 0;
+        }
+
+        .shareware-notice {
+            background-color: #e6ffe6;
+            border: 2px solid #006600;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #006600;
+            margin: 25px 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #006600;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .dev-team {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #006600;
+        }
+
+        .url {
+            font-family: "Courier New", monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>TR1</h1>
+            <div class="blink">▼ FREE DEMO AVAILABLE ▼</div>
+        </div>
+
+
+        <div class="dev-team">
+            <h3>Development Team</h3>
+            <p><strong>Korin</strong> - Lead Developer</p>
+        </div>
+
+        <div class="price">Full version costs $2.99</div>
+
+        <div class="shareware-notice">
+            <h3>SHAREWARE NOTICE</h3>
+            <p>TR1 is distributed as <strong>shareware</strong>. This means:</p>
+            <ul>
+                <li>Download and try the FREE DEMO version</li>
+                <li>If you like it, purchase the full version for $2.99</li>
+                <li>You can legally share the full version with friends</li>
+                <li>Your support allows continued development</li>
+            </ul>
+        </div>
+
+        <h2>Download Free Demo</h2>
+        <p>Try TR1 completely free! The demo version includes most of the game.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Version</th>
+                    <th>Game Size</th>
+                    <th>Archive Size</th>
+                    <th>Download</th>
+                    <th>How to Run</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linux x64</td>
+                    <td>TR1 25x1 Demo</td>
+                    <td>70 MB</td>
+                    <td>24 MB (.tar.zstd)</td>
+                    <td><a href="#" class="download-btn">tr1_25x1.tar.zstd</a></td>
+                    <td><code>Double-Click to run</code></td>
+                </tr>
+                <tr>
+                    <td> Windows x64</td>
+                    <td>TR1 25x1 Demo</td>
+                    <td>95 MB</td>
+                    <td>33 MB (.zip)</td>
+                    <td><a href="#" class="download-btn">tr1_25x1.zip</a></td>
+                    <td>Double-Click to run</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="notice">
+            <h3>SYSTEM REQUIREMENTS</h3>
+            <p><strong>Linux:</strong> Requires Linux kernel 6.0 or newer (not guaranteed to work with lower versions)</p>
+            <p><strong>Windows:</strong> Requires Windows 10 or newer</p>
+        </div>
+
+        <h2>Full Version Available On</h2>
+        <p>Purchase TR1 for only $2.99:</p>
+
+        <table>
+            <tr>
+                <td width="50%" align="center">
+                    <h3>Steam (soon)</h3>
+                    <p>Get TR1 on Steam for automatic updates.</p>
+                    <a href="#" class="download-btn">View on Steam</a>
+                </td>
+                <td width="50%" align="center">
+                    <h3>Itch.io (soon)</h3>
+                    <p>Purchase directly from Itch.io, DRM-free.</p>
+                    <a href="#" class="download-btn">View on Itch</a>
+                </td>
+            </tr>
+        </table>
+
+        <h2>System Requirements</h2>
+
+        <div class="requirements">
+            <h3>Minimum Requirements</h3>
+            <table>
+                <tr>
+                    <td>RAM</td>
+                    <td>6 GB</td>
+                </tr>
+                <tr>
+                    <td>Disk Space</td>
+                    <td>200 MB</td>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>NaN CPU</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>GTX 1060 6GB</td>
+                </tr>
+            </table>
+
+            <h3>Recommended (Developer Specs)</h3>
+            <table>
+                <tr>
+                    <td>RAM</td>
+                    <td>16 GB</td>
+                </tr>
+                <tr>
+                    <td>Disk Space</td>
+                    <td>200 MB</td>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>Ryzen 5 3600</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>RX 5700 8GB</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>How To Play</h2>
+
+        <ol>
+            <li><strong>Download</strong> the demo version for your platform</li>
+            <li><strong>Extract</strong> the archive to any location</li>
+            <li><strong>Run</strong> the executable:
+                <ul>
+                    <li>Linux: <strong>Double-Click</strong> <code>tr1_25x1.x86_64</code></li>
+                    <li>Windows: <strong>Double-Click</strong> <code>tr1_25x1.exe</code></li>
+                </ul>
+            </li>
+            <li><strong>Play</strong> the demo</li>
+            <li><strong>Purchase</strong> on Steam or Itch for the full version</li>
+            <li><strong>Share</strong> the full version with friends</li>
+        </ol>
+
+        <h2>Version Information</h2>
+        <ul>
+            <li><strong>YY</strong> = Last two digits of release year</li>
+            <li><strong>xI</strong> = Iteration number that year</li>
+            <li><strong>Example:</strong> 25x1 = First build of 2025</li>
+        </ul>
+        <p>Current version: <span class="highlight">TR1 25x1</span></p>
+
+        <hr>
+
+        <h2>Support & Contact</h2>
+        <p>For technical support or questions about TR1:</p>
+        <p>Email: <a href="mailto:support@imgns.de">support@imgns.de</a></p>
+
+        <div class="footer">
+            <p>TR1 © 2025 Korin. All rights reserved.</p>
+            <p>TR1 is distributed as shareware. Demo version is free, full version is $2.99.</p>
+            <p>Website best viewed with Firefox 145 at 1920x1080 resolution.</p>
+            <p>
+                <img src="./shareware.png" alt="Shareware" border="0">
+                <img src="./drm.png" alt="No DRM" border="0">
+            </p>
+        </div>
+    </div>
+</body>
+</html>
